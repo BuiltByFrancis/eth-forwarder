@@ -19,6 +19,7 @@ async function main() {
 
     const code = await getEthereumForwarderCode();
 
+    // @ts-ignore
     if (salt === "") {
         console.log("Missing salt, find one using the following hash:", ethers.keccak256(code));
     } else {
